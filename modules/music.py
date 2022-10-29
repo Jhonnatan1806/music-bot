@@ -36,9 +36,9 @@ class MusicCog(commands.Cog):
                 with YoutubeDL(self.YDL_OPTIONS) as ydl:
                         info = ydl.extract_info(url, download = False)
                 try:
-                        voice.play(discord.FFmpegPCMAudio(info['url'], **self.FFMPEG_OPTIONS))
-                        voice.volume = 100
-                        voice.is_playing()
+                    voice.play(discord.FFmpegPCMAudio(info['url'], **self.FFMPEG_OPTIONS))
+                    voice.volume = 100
+                    voice.is_playing()
                 except Exception as err:
                         print(err)
         else:
