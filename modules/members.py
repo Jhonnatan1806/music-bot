@@ -10,7 +10,7 @@ class MembersCog(commands.Cog):
     # register events, instead of using @Bot.events()
     @commands.Cog.listener() 
     async def on_ready(self):
-        print('Adriana UwU is now online')
+        print('Bot is now online')
 
     # Instead of bot.command()
     @commands.command()
